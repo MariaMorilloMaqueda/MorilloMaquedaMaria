@@ -7,14 +7,16 @@
 /**
  * Calcula el área de un rectángulo.
  *
- * @internal Esta función calcula el área de un rectáculo multiplicando sus parámetros (que son la base y la altura).
+ * @internal Esta función calcula el área de un cilindro.
  *
- * @param float $base La base del rectángulo.
- * @param float $altura La altura del rectángulo.
- * @return float El área calculada del rectángulo.
+ * @param float $radio El radio del cilindro.
+ * @param float $altura La altura del cilindro.
+ * @return float El área calculada del cilindro.
  */
-function calcularAreaRectangulo($base, $altura) {
-    return $base * $altura;
+function calcularAreaCilindro($radio, $altura) {
+    $pi = 3.1416;
+    $area = 2 * $pi * $radio * ($radio + $altura);
+    return $area;
 }
 
 /**
